@@ -26,4 +26,3 @@ pre-commit
 flask
 markdown
 flask_cors
--e .

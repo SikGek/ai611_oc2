@@ -19,8 +19,8 @@ num_agents=2
 seed_begin=1
 seed_max=1
 
-algo="mappo"
-exp="store_config_mlp"
+algo="rmappo"
+exp="store_config_rnn"
 echo "env is ${env}, layout is ${layout}, algo is ${algo}, exp is ${exp}, seed from ${seed_begin} to ${seed_max}"
 for seed in $(seq ${seed_begin} ${seed_max});
 do
@@ -36,8 +36,8 @@ do
 done
 
 
-algo="rmappo"
-exp="store_config_rnn"
+algo="mappo"
+exp="store_config_mlp"
 echo "env is ${env}, layout is ${layout}, algo is ${algo}, exp is ${exp}, seed from ${seed_begin} to ${seed_max}"
 for seed in $(seq ${seed_begin} ${seed_max});
 do
